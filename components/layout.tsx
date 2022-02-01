@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from '../styles/layout.module.css';
 
 function Layout({ children }: any): JSX.Element {
   return (
@@ -9,7 +8,7 @@ function Layout({ children }: any): JSX.Element {
         <meta name='description' content='My website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className={styles.container}>{children}</div>;
+      <div>{children}</div>;
     </>
   );
 }
