@@ -1,7 +1,7 @@
-import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
+import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
@@ -28,11 +28,13 @@ export default function Home({ allPostsData }: any) {
         <ul>
           {allPostsData.map(({ id, date, title }: any) => (
             <li key={id}>
-              {title}
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
