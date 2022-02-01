@@ -2,8 +2,18 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({ allPostsData }: any) {
   return (
     <Layout>
       <main>
@@ -13,8 +23,20 @@ const Home: NextPage = () => {
           <a>About</a>
         </Link>
       </main>
+      <section>
+        <h2>Blog</h2>
+        <ul>
+          {allPostsData.map(({ id, date, title }: any) => (
+            <li key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
     </Layout>
   );
-};
-
-export default Home;
+}

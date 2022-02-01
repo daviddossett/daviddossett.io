@@ -8,7 +8,7 @@ function Layout({ children }: any): JSX.Element {
         <meta name='description' content='My website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div>{children}</div>;
+      <div>{children}</div>
     </>
   );
 }
