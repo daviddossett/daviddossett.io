@@ -7,6 +7,18 @@
     @apply max-h-screen overflow-hidden text-base antialiased;
   }
 
+  body {
+    @apply text-slate-900 dark:text-white;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
   /* handles safari overscroll background color */
   body:after {
     content: '';
