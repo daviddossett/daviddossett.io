@@ -18,7 +18,7 @@ export default function Home({ allPostsData }: any) {
     <Layout>
       <main>
         <Image src='/images/headshot.jpeg' alt='My headshot' width={300} height={300} />
-        <h1>Hello World</h1>
+        <h1>Hello World!</h1>
         <Link href='/about'>
           <a>About</a>
         </Link>
