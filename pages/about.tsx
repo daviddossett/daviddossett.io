@@ -6,10 +6,12 @@ export default function About() {
   return (
     <Layout>
       <h1>About</h1>
-      <p>About page placeholder</p>
+      <p>Lorum ipsum</p>
       <Link href='/'>
         <a>Home</a>
       </Link>
     </Layout>
   );
 }
+
+
