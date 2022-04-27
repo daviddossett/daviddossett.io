@@ -9,15 +9,17 @@ function Layout({ children }: any): JSX.Element {
         <meta name='description' content='My website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav className='list-none'>
-        <ul>
+      <nav className='list-none py-8'>
+        <ul className='flex justify-between'>
           <li>Image</li>
-          <li>
-            <Link href='/'>Work</Link>
-          </li>
-          <li>
-            <Link href='/about'>About</Link>
-          </li>
+          <div className='flex gap-4'>
+            <li>
+              <Link href='/'>Work</Link>
+            </li>
+            <li>
+              <Link href='/about'>About</Link>
+            </li>
+          </div>
         </ul>
       </nav>
       <div>{children}</div>
