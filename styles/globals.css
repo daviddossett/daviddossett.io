@@ -12,11 +12,11 @@
   }
 
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-3xl font-bold;
   }
 
   h2 {
-    @apply text-3xl font-bold;
+    @apply text-2xl font-bold;
   }
 
   /* handles safari overscroll background color */
@@ -28,6 +28,6 @@
     bottom: -50%;
     left: -50%;
     z-index: -1;
-    @apply bg-white dark:bg-black;
+    @apply bg-white dark:bg-neutral-800;
   }
 }
