@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 function Layout({ children }: any): JSX.Element {
   return (
-    <div className='p-8'>
+    <div className='p-8 max-w-3xl mx-auto'>
       <Head>
         <title>David Dossett</title>
         <meta name='description' content='My website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav className='list-none py-8'>
+      <nav className='list-none py-8 md:pt-8 md:pb-24'>
         <ul className='flex justify-between'>
           <li>Image</li>
-          <div className='flex gap-4'>
+          <div className='flex gap-8'>
             <li>
               <Link href='/'>Work</Link>
             </li>

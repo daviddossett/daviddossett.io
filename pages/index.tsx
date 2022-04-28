@@ -5,14 +5,18 @@ import Layout from '../components/layout';
 export default function Home() {
   return (
     <Layout>
-      <main className='grid grid-cols-1 gap-16 auto-rows-auto'>
-        <h1 className='col-span-1'>Hi, I'm David.</h1>
-        <p className='col-span-1'>
-          I'm a product designer and UI engineer. Right now I'm working on Visual Studio Code. Previously I was
-          designing interfaces at Microsoft. In my free time I create courses, resources, prototypes, and apps.
+      <main className='grid'>
+        <h1>Hi, I'm David.</h1>
+        <p>
+          I'm a product designer and UI engineer. Right now I'm working on{' '}
+          <a href='https://code.visualstudio.com' target='blank'>
+            Visual Studio Code
+          </a>
+          . Previously I was designing interfaces at Microsoft. In my free time I play music, play with my daughter, and
+          take photos.
         </p>
-        <ul className='col-span-1 grid grid-rows-4 gap-1'>
-          <li>
+        <ul className='grid grid-rows-4 gap-1'>
+          {/* <li>
             <Card />
           </li>
           <li>
@@ -23,7 +27,7 @@ export default function Home() {
           </li>
           <li>
             <Card />
-          </li>
+          </li> */}
         </ul>
       </main>
     </Layout>
