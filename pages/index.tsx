@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Card from '../components/card';
 import Layout from '../components/layout';
 import code from '../public/images/code-192.png';
