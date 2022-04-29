@@ -24,7 +24,7 @@
   p,
   li,
   a {
-    @apply text-[1.4rem] leading-relaxed font-medium;
+    @apply text-[1.3rem] leading-relaxed font-medium;
   }
 
   a {
