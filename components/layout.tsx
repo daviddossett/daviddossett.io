@@ -17,7 +17,7 @@ function Layout({ children }: any): JSX.Element {
               <Link href='/'>Work</Link>
             </li>
             <li>
-              <Link href='/about'>About</Link>
+              <Link href='/about'>Other</Link>
             </li>
           </div>
         </ul>
