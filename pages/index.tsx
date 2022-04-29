@@ -17,26 +17,29 @@ export default function Home() {
             hang out with my daughter, and take photos.
           </p>
         </div>
-        <ul className='grid grid-rows-4 gap-8'>
-          <li>
-            <Card title='Visual Studio Code' desc='Lorum ipsum foo bar' />
-          </li>
-          <li>
-            <Card title='Webview UI Toolkit for Visual Studio Code' desc='Lorum ipsum foo bar' />
-          </li>
-          <li>
-            <Card title='Product Insights' desc='Lorum ipsum foo bar' />
-          </li>
-          <li>
-            <Card title='Grid Generator' desc='Lorum ipsum foo bar' />
-          </li>
-          <li>
-            <Card title='filmandcolor' desc='Lorum ipsum foo bar' />
-          </li>
-          <li>
-            <Card title='Aria' desc='Lorum ipsum foo bar' />
-          </li>
-        </ul>
+        <div>
+          <h2>Recent work</h2>
+          <ul className='grid grid-rows-4 gap-8 md:grid-cols-2'>
+            <li>
+              <Card title='Visual Studio Code' desc='Lorum ipsum foo bar' to='/visual-studio-code' />
+            </li>
+            <li>
+              <Card title='Webview UI Toolkit' desc='Lorum ipsum foo bar' to='/webview-ui-toolkit' />
+            </li>
+            <li>
+              <Card title='Product Insights' desc='Lorum ipsum foo bar' to='/product-insights' />
+            </li>
+            <li>
+              <Card title='Grid Playground' desc='Lorum ipsum foo bar' to='/grid-playround' />
+            </li>
+            <li>
+              <Card title='filmandcolor' desc='Lorum ipsum foo bar' to='/filmandcolor' />
+            </li>
+            <li>
+              <Card title='Aria' desc='Lorum ipsum foo bar' to='/aria' />
+            </li>
+          </ul>
+        </div>
       </main>
     </Layout>
   );

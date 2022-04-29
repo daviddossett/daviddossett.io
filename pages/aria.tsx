@@ -1,11 +1,11 @@
 import Layout from '../components/layout';
 
-export default function About() {
+export default function Aria() {
   return (
     <Layout>
       <main>
-        <h1>About</h1>
-        <p>This is the about page</p>
+        <h1>Aria</h1>
+        <p>This is the page about Aria.</p>
       </main>
     </Layout>
   );

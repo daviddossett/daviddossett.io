@@ -10,6 +10,7 @@
   body {
     @apply text-slate-900 dark:text-white;
     @apply bg-white dark:bg-[#2c2c2c];
+    @apply leading-6;
   }
 
   h1 {
