@@ -7,7 +7,7 @@ export default function Home() {
     <Layout>
       <main className='grid gap-24 overflow-auto'>
         <div className='md:px-6'>
-          <h1>Hi, I'm David.</h1>
+          <h1>Hi, I&apos;m David.</h1>
           <p>
             I'm a product designer and UI engineer. I'm currently working on{' '}
             <a href='https://code.visualstudio.com' target='blank'>
