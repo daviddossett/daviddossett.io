@@ -5,7 +5,7 @@ export default function About() {
     <Layout>
       <main>
         <h1>About</h1>
-        <p>This is the about page</p>
+        <p>This is the fancy about page</p>
       </main>
     </Layout>
   );
