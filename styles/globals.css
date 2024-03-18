@@ -5,11 +5,12 @@
 @layer base {
   html {
     @apply max-h-screen text-base antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   }
 
   body {
     @apply text-slate-900 dark:text-white;
-    @apply bg-white dark:bg-[#2c2c2c];
+    @apply bg-white dark:bg-slate-950;
     @apply leading-6;
   }
 
@@ -24,10 +25,10 @@
   p,
   li,
   a {
-    @apply text-[1.3rem] leading-relaxed font-medium;
+    @apply text-[1rem] leading-7;
   }
 
   a {
-    @apply hover:text-blue-400;
+    @apply text-blue-300 hover:text-blue-400;
   }
 }
