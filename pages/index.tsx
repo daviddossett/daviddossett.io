@@ -10,7 +10,7 @@ export default function Home() {
             Hi, I'm David. I'm a designer and maker of software. I'm currently building{' '}
             <a href='https://code.visualstudio.com' target='blank'>
               VS Code
-            </a> and GitHub Copilot Chat.
+            </a> and GitHub Copilot Chat. 
           </p>
         </div>
       </main>

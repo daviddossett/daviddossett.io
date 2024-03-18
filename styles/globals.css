@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply text-slate-900 dark:text-white;
+    @apply text-slate-900 dark:text-slate-400;
     @apply bg-white dark:bg-slate-950;
     @apply leading-6;
   }
@@ -29,6 +29,6 @@
   }
 
   a {
-    @apply text-blue-300 hover:text-blue-400;
+    @apply text-blue-400 hover:text-blue-500;
   }
 }
