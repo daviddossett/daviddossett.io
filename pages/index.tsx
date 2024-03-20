@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <main className='mx-auto w-full max-w-3xl px-4 py-12 pb-10 md:px-8'>
+      <main className='mx-auto w-full max-w-3xl px-4 py-28 pb-10 md:px-8'>
         <div className='md:px-6'>
           <p>Hi, I'm David. I'm a designer and maker of software based in Seattle, WA. I'm currently leading design for {vsCodeLink} and building {copilotLink} at Microsoft.</p>
           <p>I've been at Microsoft since 2016. Before VS Code, I led design for Aria, a real-time analytics app and platform. I also spent time as a developer building the design system for Customer Insights. I learned the ropes at {eightNinthsLink} working on AR/VR experiences.</p>
