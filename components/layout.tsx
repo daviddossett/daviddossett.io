@@ -14,4 +14,3 @@ function Layout({ children }: any): JSX.Element {
 }
 
 export default Layout;
-// Path: components/card.tsx
