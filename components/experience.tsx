@@ -1,27 +1,13 @@
 import React from "react";
 import { DescriptionRow } from "./description-row";
 
-interface ExperienceProps {
+interface ExperienceData {
   title: string;
   company: string;
   description: string;
 }
 
-const Experience: React.FC<ExperienceProps> = ({
-  title,
-  company,
-  description,
-}) => {
-  return (
-    <DescriptionRow
-      title={title}
-      descriptionPrimary={company}
-      descriptionSecondary={description}
-    />
-  );
-};
-
-const experiences = [
+const experiences: ExperienceData[] = [
   {
     title: "Principal Designer, VS Code",
     company: "Microsoft",
@@ -62,11 +48,11 @@ export const ExperienceList: React.FC = () => {
       </h2>
       <div className="flex flex-col gap-6">
         {experiences.map((experience, index) => (
-          <Experience
+          <DescriptionRow
             key={index}
             title={experience.title}
-            company={experience.company}
-            description={experience.description}
+            descriptionPrimary={experience.company}
+            descriptionSecondary={experience.description}
           />
         ))}
       </div>
