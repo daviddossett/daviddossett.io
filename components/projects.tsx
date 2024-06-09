@@ -1,4 +1,4 @@
-import { DescriptionRow } from "./DescriptionRow";
+import { DescriptionRow } from "./description-row";
 
 interface ProjectProps {
   title: string;
