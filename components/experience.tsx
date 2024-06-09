@@ -1,3 +1,5 @@
+import { DescriptionRow } from "./DescriptionRow";
+
 interface ExperienceProps {
   title: string;
   company: string;
@@ -10,14 +12,11 @@ const Experience: React.FC<ExperienceProps> = ({
   description,
 }) => {
   return (
-    <div>
-      <h3 className="mb-1">{title}</h3>
-      <p className="flex flex-row gap-2 mb-0 text-slate-600 dark:text-slate-400">
-        {company}
-        <span className="text-2xl font-bold leading-4 text-blue-400">.</span>
-        {description}
-      </p>
-    </div>
+    <DescriptionRow
+      title={title}
+      descriptionPrimary={company}
+      descriptionSecondary={description}
+    />
   );
 };
 
