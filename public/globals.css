@@ -16,6 +16,12 @@
     @apply leading-6;
   }
 
+  h1,
+  h2,
+  h3 {
+    @apply text-slate-900 dark:text-slate-300;
+  }
+
   h1 {
     @apply text-2xl font-bold leading-loose;
   }

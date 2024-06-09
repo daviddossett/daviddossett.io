@@ -3,7 +3,7 @@ import { Header } from "./header";
 
 function Layout({ children }: any): JSX.Element {
   return (
-    <div className="max-w-[960px] mx-auto w-full px-4">
+    <div className="max-w-[960px] mx-auto w-full px-4 md:px-8">
       <Head>
         <title>David Dossett</title>
         <meta name="description" content="My website" />

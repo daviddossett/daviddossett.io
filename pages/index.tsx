@@ -33,7 +33,7 @@ export default function Home() {
           developer building the design system for Customer Insights.
         </p>
       </div>
-      <div className="flex flex-row gap-14">
+      <div className="flex flex-col md:flex-row gap-14">
         <Projects />
         <ExperienceList />
       </div>
