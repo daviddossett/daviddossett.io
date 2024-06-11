@@ -1,19 +1,26 @@
+import Link from "next/link";
 import { DescriptionRow } from "./description-row";
 
 interface ProjectProps {
   title: string;
   description: string;
+  path: string;
   image: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ title, description, image }) => {
+const Project: React.FC<ProjectProps> = ({
+  title,
+  description,
+  path,
+  image,
+}) => {
   return (
-    <div>
+    <Link href={path}>
       <DescriptionRow title={title} descriptionPrimary={description} />
       <div className="flex justify-center items-center mt-4 py-32 bg-gray-100 dark:bg-gray-700 rounded-md">
         <span className="text-slate-400">{image}</span>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -27,17 +34,20 @@ export const Projects: React.FC = () => {
         <Project
           title="GitHub Copilot"
           description="Your AI pair programmer"
-          image="copilot.png"
+          path="/github-copilot"
+          image="github-copilot.png"
         />
         <Project
           title="VS Code Merge Editor"
           description="Resolving merge conflicts with ease"
-          image="merge-editor.png"
+          path="/vs-code-merge-editor"
+          image="vs-code-merge-editor.png"
         />
         <Project
           title="VS Code Command Center"
           description="Bringing keyboard efficiency to the masses"
-          image="command-center.png"
+          path="/vs-code-command-center"
+          image="vs-code-command-center.png"
         />
       </div>
     </div>

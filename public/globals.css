@@ -40,8 +40,9 @@
   }
 
   a {
+    @apply px-1 -mx-1 rounded-md;
     @apply text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300;
-    @apply hover:underline;
+    @apply hover:bg-slate-100 dark:hover:bg-gray-900;
   }
 }
 
