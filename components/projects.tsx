@@ -68,6 +68,11 @@ export const Projects: React.FC = () => {
           description="Real-time cross-platform analytics SaaS app"
           image="/images/product-insights.png"
         />
+        <Project
+          title="Grid Playground"
+          description="Side project to quickly generate CSS grid layouts"
+          image="/images/grid-playground.png"
+        />
       </div>
     </div>
   );
