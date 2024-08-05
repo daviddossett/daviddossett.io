@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import { DescriptionRow } from "./description-row";
 
 interface ProjectProps {
@@ -15,12 +15,16 @@ const Project: React.FC<ProjectProps> = ({
   image,
 }) => {
   return (
-    <Link href={path}>
+    <div className="flex flex-col gap-4">
       <DescriptionRow title={title} descriptionPrimary={description} />
-      <div className="flex justify-center items-center mt-4 py-32 bg-gray-100 dark:bg-gray-700 rounded-md">
-        <span className="text-slate-400">{image}</span>
-      </div>
-    </Link>
+      <Image
+        src={image}
+        alt={title}
+        width={800}
+        height={400}
+        className="rounded-md"
+      />
+    </div>
   );
 };
 
@@ -28,26 +32,43 @@ export const Projects: React.FC = () => {
   return (
     <div className="flex-col flex-grow">
       <h2 className="mt-0 font-base font-semibold text-blue-600 dark:text-blue-400">
-        Projects
+        Recent Projects
       </h2>
       <div className="flex flex-col gap-12">
         <Project
-          title="GitHub Copilot"
-          description="Your AI pair programmer"
-          path="/github-copilot"
-          image="github-copilot.png"
+          title="GitHub Copilot Chat"
+          description="Copilot Chat, Inline Chat, and Extensibility integration in VS Code"
+          image="/images/copilot-chat.png"
         />
         <Project
-          title="VS Code Merge Editor"
-          description="Resolving merge conflicts with ease"
-          path="/vs-code-merge-editor"
-          image="vs-code-merge-editor.png"
+          title="Merge Editor"
+          description="Reducing anxiety when resolving complex conflicts"
+          image="/images/vscode-merge-editor.png"
         />
         <Project
-          title="VS Code Command Center"
+          title="Command Center"
           description="Bringing keyboard efficiency to the masses"
-          path="/vs-code-command-center"
-          image="vs-code-command-center.png"
+          image="/images/vscode-command-center.png"
+        />
+        <Project
+          title="Profiles"
+          description="Configure VS Code for different workloads"
+          image="/images/vscode-profiles.png"
+        />
+        <Project
+          title="VS Code Website"
+          description="Modernized VS Code website and docs"
+          image="/images/vscode-website.png"
+        />
+        <Project
+          title="Default Themes"
+          description="Modernized, accessibile, opt-out default dark/light themes"
+          image="/images/vscode-themes.png"
+        />
+        <Project
+          title="Product Insights"
+          description="Real-time cross-platform analytics SaaS app"
+          image="/images/product-insights.png"
         />
       </div>
     </div>

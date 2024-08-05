@@ -29,11 +29,10 @@ export default function Home() {
         </p>
         <p className="intro">
           I've been at Microsoft since 2016. Before VS Code, I led design for
-          Aria, a real-time analytics app and platform. I also spent time as a
-          developer building the design system for Customer Insights.
+          Customer Insights, a real-time analytics app and platform.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-14">
+      <div className="flex flex-col gap-14">
         <Projects />
         <ExperienceList />
       </div>
