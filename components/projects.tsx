@@ -18,8 +18,8 @@ const Project: React.FC<ProjectProps> = ({
       <Image
         src={image}
         alt={title}
-        width={800}
-        height={400}
+        width="1600"
+        height="800"
         className="rounded-md"
       />
     </div>
@@ -28,7 +28,7 @@ const Project: React.FC<ProjectProps> = ({
 
 export const Projects: React.FC = () => {
   return (
-    <div className="flex-col flex-grow">
+    <div className="flex-col">
       <h2 className="mt-0 font-base font-semibold text-blue-600 dark:text-blue-400">
         Recent Projects
       </h2>
