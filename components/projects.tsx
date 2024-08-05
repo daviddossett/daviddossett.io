@@ -4,14 +4,12 @@ import { DescriptionRow } from "./description-row";
 interface ProjectProps {
   title: string;
   description: string;
-  path: string;
   image: string;
 }
 
 const Project: React.FC<ProjectProps> = ({
   title,
   description,
-  path,
   image,
 }) => {
   return (
