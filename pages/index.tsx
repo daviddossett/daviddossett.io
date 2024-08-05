@@ -25,7 +25,7 @@ export default function Home() {
       <div className="py-16 max-w-3xl">
         <p className="intro">
           Hi, I'm David. I'm a designer based in Seattle, WA. I'm currently
-          leading design for {vsCodeLink} and {copilotLink} at Microsoft.
+          leading design for {vsCodeLink} and building {copilotLink} at Microsoft.
         </p>
         <p className="intro">
           I've been at Microsoft since 2016. Before VS Code, I led design for
