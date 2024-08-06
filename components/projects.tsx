@@ -35,7 +35,7 @@ export const Projects: React.FC = () => {
       <div className="flex flex-col gap-12">
         <Project
           title="GitHub Copilot Chat"
-          description="Copilot Chat, Inline Chat, and Extensibility integration in VS Code"
+          description="Copilot Chat, Inline Chat, and extensibility in VS Code"
           image="/images/copilot-chat.png"
         />
         <Project
