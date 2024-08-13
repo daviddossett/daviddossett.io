@@ -4,24 +4,27 @@ import { DescriptionRow } from "./description-row";
 interface ProjectProps {
   title: string;
   description: string;
-  image: string;
+  images: string[];
 }
 
 const Project: React.FC<ProjectProps> = ({
   title,
   description,
-  image,
+  images,
 }) => {
   return (
     <div className="flex flex-col gap-4">
       <DescriptionRow title={title} descriptionPrimary={description} />
-      <Image
-        src={image}
-        alt={title}
-        width="1600"
-        height="800"
-        className="rounded-md"
-      />
+      {images.map((image, index) => (
+        <Image
+          key={index}
+          src={image}
+          alt={title}
+          width="1600"
+          height="800"
+          className="rounded-md"
+        />
+      ))}
     </div>
   );
 };
@@ -36,52 +39,52 @@ export const Projects: React.FC = () => {
         <Project
           title="GitHub Copilot Chat"
           description="Copilot Chat, Inline Chat, and extensibility in VS Code"
-          image="/images/copilot-chat.png"
+          images={["/images/copilot-chat.png"]}
         />
         <Project
           title="Merge Editor"
           description="Reducing anxiety when resolving complex conflicts"
-          image="/images/vscode-merge-editor.png"
+          images={["/images/vscode-merge-editor.png"]}
         />
         <Project
           title="Command Center"
           description="Bringing keyboard efficiency to the masses"
-          image="/images/vscode-command-center.png"
+          images={["/images/vscode-command-center.png"]}
         />
         <Project
           title="Profiles"
           description="Configure VS Code for different workloads"
-          image="/images/vscode-profiles.png"
+          images={["/images/vscode-profiles.png"]}
         />
         <Project
           title="VS Code Website"
           description="Modernized VS Code website and docs"
-          image="/images/vscode-website.png"
+          images={["/images/vscode-website.png"]}
         />
         <Project
           title="Default Themes"
-          description="Modernized, accessibile, opt-out default dark/light themes"
-          image="/images/vscode-themes.png"
+          description="Modernized, accessibile, dark, light, and high contrast themes"
+          images={["/images/vscode-theme-dark.png", "/images/vscode-theme-light.png", '/images/vscode-light-hc-theme.png']}
         />
         <Project
           title="GitHub Pull Requests & Issues Extension"
           description="Revamped UI for the much-loved GitHub extension"
-          image="/images/vscode-ghpri.jpeg"
+          images={["/images/vscode-ghpri.png"]}
         />
         <Project
           title="Webview Toolkit for Visual Studio Code"
           description="A component library for building webview-based extensions in Visual Studio Code"
-          image="/images/vscode-webview-toolkit.png"
+          images={["/images/vscode-webview-toolkit.png"]}
         />
         <Project
           title="Product Insights"
           description="Real-time cross-platform analytics SaaS app"
-          image="/images/product-insights.png"
+          images={["/images/product-insights.png"]}
         />
         <Project
           title="Grid Playground"
           description="Side project to quickly generate CSS grid layouts"
-          image="/images/grid-playground.png"
+          images={["/images/grid-playground.png"]}
         />
       </div>
     </div>
