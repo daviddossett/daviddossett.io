@@ -69,6 +69,11 @@ export const Projects: React.FC = () => {
           image="/images/vscode-ghpri.jpeg"
         />
         <Project
+          title="Webview Toolkit for Visual Studio Code"
+          description="A component library for building webview-based extensions in Visual Studio Code"
+          image="/images/vscode-webview-toolkit.png"
+        />
+        <Project
           title="Product Insights"
           description="Real-time cross-platform analytics SaaS app"
           image="/images/product-insights.png"
