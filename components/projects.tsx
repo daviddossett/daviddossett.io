@@ -64,6 +64,11 @@ export const Projects: React.FC = () => {
           image="/images/vscode-themes.png"
         />
         <Project
+          title="GitHub Pull Requests & Issues Extension"
+          description="Revamped UI for the much-loved GitHub extension"
+          image="/images/vscode-ghpri.jpeg"
+        />
+        <Project
           title="Product Insights"
           description="Real-time cross-platform analytics SaaS app"
           image="/images/product-insights.png"
