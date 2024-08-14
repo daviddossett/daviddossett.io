@@ -58,12 +58,12 @@ export const Projects: React.FC = () => {
         />
         <Project
           title="VS Code Website"
-          description="Modernized VS Code website and docs"
+          description="Refreshed VS Code website and docs"
           images={["/images/vscode-website.png"]}
         />
         <Project
           title="Default Themes"
-          description="Modernized, accessibile, dark, light, and high contrast themes"
+          description="Modernized, accessible, dark, light, and high contrast themes"
           images={["/images/vscode-theme-dark.png", "/images/vscode-theme-light.png", '/images/vscode-light-hc-theme.png']}
         />
         <Project
