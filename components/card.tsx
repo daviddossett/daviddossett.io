@@ -18,6 +18,7 @@ function Card({ title, desc, to, image }: ICard): JSX.Element {
           <p className='leading-8 text-neutral-400'>{desc}</p>
         </div>
       </div>
+      <h2>boop</h2>
     </Link>
   );
 }
